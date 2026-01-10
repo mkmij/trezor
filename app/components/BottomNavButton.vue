@@ -4,6 +4,7 @@ const props = defineProps<{
     size?: string;
     selected: boolean;
     selectedName: string;
+    to: string;
 }>();
 
 const emit = defineEmits<{
@@ -12,8 +13,8 @@ const emit = defineEmits<{
 </script>
 
 <template>
-    <NuxtLink @click="emit('clicked', props.selectedName)">
-        <li :class="{ 'border-b': props.selected }">
+    <NuxtLink :to="props.to" @click="emit('clicked', props.selectedName)">
+        <li :class="{ 'border-b-2': props.selected }">
             <Icon :name="props.icon" :size="props.size || 28" />
         </li>
     </NuxtLink>
