@@ -10,5 +10,8 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  modules: ["@nuxt/icon"],
+  modules: ["@nuxt/icon", "@nuxtjs/color-mode"],
+  colorMode: {
+    dataValue: "theme",
+  }
 });
