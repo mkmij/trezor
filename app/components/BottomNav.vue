@@ -5,7 +5,7 @@ const changeSelection = (val: string) => (selected.value = val);
 </script>
 
 <template>
-    <div class="text-primary-600 w-xs rounded-full shadow-lg ring ring-gray-400/15 mx-auto mb-2.5">
+    <div class="text-primary-600 w-xs rounded-full bg-base-200 mx-auto mb-2.5">
         <ul class="flex flex-row justify-around p-2">
             <BottomNavLink
                 icon="mynaui:home-solid"
